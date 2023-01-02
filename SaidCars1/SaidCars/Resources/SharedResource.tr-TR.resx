@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdminPanel" xml:space="preserve">
+    <value>Admin Paneli</value>
+  </data>
+  <data name="Al" xml:space="preserve">
+    <value>Rezerve Et</value>
+  </data>
+  <data name="Anasayfa" xml:space="preserve">
+    <value>Anasayfa</value>
+  </data>
+  <data name="Araclar" xml:space="preserve">
+    <value>Araçlar</value>
+  </data>
+  <data name="BizKimiz" xml:space="preserve">
+    <value>Biz Kimiz</value>
+  </data>
+  <data name="Cikis" xml:space="preserve">
+    <value>Çıkış</value>
+  </data>
+  <data name="GirisYap" xml:space="preserve">
+    <value>Giriş</value>
+  </data>
+  <data name="Hakkimizda" xml:space="preserve">
+    <value>Hakkımızda</value>
+  </data>
+  <data name="HakkimizdaIcerik1" xml:space="preserve">
+    <value>2010'dan bu yana gelişen bilgi ve tecrübelerimizle sizlere en konforlu şekilde araç alım satım yapmaya çalışıyoruz. Konum olarak Karabük'ün Safranbolu ilçesinde olup sizleri ağırlamaktan mutluluk duyarız. </value>
+  </data>
+  <data name="HakkimizdaIcerik2" xml:space="preserve">
+    <value>Şimdi araç satın almanın tam zamanı</value>
+  </data>
+  <data name="Hasar" xml:space="preserve">
+    <value>Hasarlı</value>
+  </data>
+  <data name="HasarD" xml:space="preserve">
+    <value>Hasarlı Değil</value>
+  </data>
+  <data name="Hasarlimi" xml:space="preserve">
+    <value>Hasarlı mı?</value>
+  </data>
+  <data name="Hosgeldin" xml:space="preserve">
+    <value>Hoşgeldin</value>
+  </data>
+  <data name="Iletisim" xml:space="preserve">
+    <value>İletişim</value>
+  </data>
+  <data name="iletisimAd" xml:space="preserve">
+    <value>Adınız</value>
+  </data>
+  <data name="Kategoriler" xml:space="preserve">
+    <value>Araba Kategorileri</value>
+  </data>
+  <data name="KayitOl" xml:space="preserve">
+    <value>Kayıt Ol</value>
+  </data>
+  <data name="Marka" xml:space="preserve">
+    <value>Marka</value>
+  </data>
+  <data name="Misyon" xml:space="preserve">
+    <value>MİSYONUMUZ</value>
+  </data>
+  <data name="MisyonIcerik" xml:space="preserve">
+    <value>2010 dan bu yana gelen tecrübe ile sizlere her gün daha iyi hizmet verebilmek için var gücümüzle çalışıyoruz.</value>
+  </data>
+  <data name="RezerveEt" xml:space="preserve">
+    <value>Şimdi Rezerve Et</value>
+  </data>
+  <data name="SahiplenmeDon" xml:space="preserve">
+    <value>Rezerveye Dön</value>
+  </data>
+  <data name="SahiplenmeGercekleme" xml:space="preserve">
+    <value>En Yakın Zamanda Galerimize Gelip Araca Bakabilirsiniz.</value>
+  </data>
+  <data name="Slider1" xml:space="preserve">
+    <value>TİCARİ</value>
+  </data>
+  <data name="Slider1Icerik" xml:space="preserve">
+    <value>Ticari araç kategorileri ile hizmetinizdeyiz.</value>
+  </data>
+  <data name="Slider2" xml:space="preserve">
+    <value>OTOMOBİL</value>
+  </data>
+  <data name="Slider2Icerik" xml:space="preserve">
+    <value>Otomobil araç kategorileri ile hizmetinizdeyiz.</value>
+  </data>
+  <data name="Slider3" xml:space="preserve">
+    <value>PANELVAN</value>
+  </data>
+  <data name="Slider3Icerik" xml:space="preserve">
+    <value>Panelvan araç kategorileri ile hizmetinizdeyiz.</value>
+  </data>
+  <data name="Tebrik" xml:space="preserve">
+    <value>Tebrikler</value>
+  </data>
+  <data name="Tercih" xml:space="preserve">
+    <value>Neden Bizi Tercih Etmelisiniz?</value>
+  </data>
+  <data name="TercihIcerik" xml:space="preserve">
+    <value>Satılan araçlarımızı istediğiniz ekspertiz ya da ustalara gösterebilirsiniz.
+Araç almak istediğinizde en uygun fiyat garantisini veriyoruz.
+Birlikte her gün daha iyiye...</value>
+  </data>
+  <data name="Tur" xml:space="preserve">
+    <value>Tür</value>
+  </data>
+  <data name="UygunAraclar" xml:space="preserve">
+    <value>Uygun Araçlar</value>
+  </data>
+  <data name="Vizyon" xml:space="preserve">
+    <value>VİZYONUMUZ</value>
+  </data>
+  <data name="VizyonIcerik" xml:space="preserve">
+    <value>Sizlerle ilişkilerimiz kazan kazandır.
+Kalpleri kırmayacak fiyattan alıp kalpleri ısındıracak fiyatlara satıyoruz.</value>
+  </data>
+  <data name="Yas" xml:space="preserve">
+    <value>Model</value>
+  </data>
+</root>

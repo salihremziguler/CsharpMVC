@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewData["Title"] = "Araba Düzenle";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@model ArabalarTurMarkaViewModel
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Hayvanlar</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Resim</th>
+                            <th>Adı</th>
+                            <th>Türü</th>
+                            <th>Markası</th>
+                            <th>Modeli</th>
+                            <th>Hasarlı mı?</th>
+                            <th>Ek Açıklama</th>
+                            <th>Rezerve Durumu</th>
+                            <th>İşlem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ int i = 0;}
+                        @foreach (var t in Model.Araba)
+                        {
+
+                        <tr>
+                            <td><img src="@t.Foto" width="50" height="50" /></td>
+                            <td>@t.Adi</td>
+                            <td>@Model.Tur.Where(x => x.TurId == t.TurId).FirstOrDefault().TurAdi</td>
+                            <td>@Model.Marka.Where(x => x.MarkaId == t.MarkaId).FirstOrDefault().MarkaAdi</td>
+                            <td>@t.Model</td>
+                            @if (t.HasarliMi)
+                            {
+                                <td>Hasarlı</td>
+                            }
+                            else
+                            {
+                                <td>Hasarlı Değil</td>
+                            }
+                            <td>@t.EkBilgiler</td>
+                            @if (t.RezerveMi)
+                            {
+                                <td>Rezerve Edildi</td>
+                            }
+                            else
+                            {
+                                <td>Rezerve Edilmedi</td>
+                            }
+                        <td>
+                            <a class="btn btn-danger btn-sm" asp-controller="Admin" asp-action="ArabaSil" asp-route-id="@t.ArabaId">Sil</a>
+                            <a class="btn btn-info btn-sm" asp-controller="Admin" asp-action="ArabaUpdate" asp-route-id="@t.ArabaId">Güncelle</a>
+                        </td>
+                        </tr>
+                            i++;
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
