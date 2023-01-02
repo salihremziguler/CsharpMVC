@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewData["Title"] = "ArabaEkle";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@model ArabaTurMarkaViewModel
+<div class="container mt-5">
+    <h1 style="text-align:center;">Araba Ekle</h1>
+    <form class="w-75 m-auto" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="Araba.Adi"></label>
+            <input asp-for="Araba.Adi" class="form-control" />
+            <span asp-validation-for="Araba.Adi" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Araba.Model"></label>
+            <input asp-for="Araba.Model" class="form-control" />
+            <span asp-validation-for="Araba.Model" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            @*asp-for="EmployeeId" asp-items="@(new SelectList(Model.EmployeesList, "Id", "FullName"))"*@
+            <select asp-for="Araba.MarkaId" class="form-control">
+                <option selected>Marka Adını Seçin</option>
+                @foreach (var t in Model.Markalar)
+                {
+                    <option value="@t.MarkaId" for="id">@t.MarkaAdi</option>
+                }
+            </select>
+            <span asp-validation-for="Araba.Marka.MarkaAdi" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            @*asp-for="EmployeeId" asp-items="@(new SelectList(Model.EmployeesList, "Id", "FullName"))"*@
+            <select asp-for="Araba.TurId" class="form-control">
+                <option selected>Tür Adını Seçin</option>
+                @foreach (var tur in Model.Turler)
+                {
+                    <option value="@tur.TurId" for="id">@tur.TurAdi</option>
+                }
+            </select>
+            <span asp-validation-for="Araba.Tur.TurAdi" class="text-danger"></span>
+        </div>
+       
+        <div class="form-group">
+            <label asp-for="Araba.HasarliMi"></label><br />
+            <input type="radio" asp-for="Araba.HasarliMi" value="true" />Hasarlı&emsp;
+            <input type="radio" asp-for="Araba.HasarliMi" value="false" />Hasarlı değil
+            <span asp-validation-for="Araba.HasarliMi" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Araba.EkBilgiler"></label>
+            <input asp-for="Araba.EkBilgiler" class="form-control" />
+            <span asp-validation-for="Araba.EkBilgiler" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Fotoğraf Yükle</label>
+            <input class="form-control" type="file" id="formFile" name="hayvanFoto">
+        </div>
+        <button type="submit" class="btn btn-primary float-right">Kaydet</button>
+    </form>
+
+</div>
+<div class="container mt-2">
+    <p class="w-75 text-primary text-center">@ViewBag.Mesaj</p>
+    <p class="w-75 text-danger text-center">@ViewBag.Error</p>
+</div>
+
